@@ -1,0 +1,100 @@
+.header {
+  &__container {
+    padding: 45px 0;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $clr-primary-fi;
+    padding-bottom: 20px;
+  }
+  &__logo {
+    display: block;
+    max-width: 490px;
+    max-height: 123px;
+    margin-right: 60px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+  }
+  &__auth {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    .username {
+      color: $clr-secondary-tw;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+  form {
+    display: flex;
+    align-items: center;
+    border: 1px solid $clr-primary-fi;
+    border-radius: 8px;
+    background-color: $clr-secondary-on;
+
+    width: 350px;
+    height: 52px;
+    .icon {
+      padding: 0 15px;
+    }
+    input {
+      border: none;
+      outline: none;
+      flex: 1;
+
+      font-size: 18px;
+      font-weight: 400;
+      line-height: normal;
+      color: $clr-primary-fi;
+    }
+  }
+  &__bot {
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+    .menu {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 120px;
+      position: relative;
+      &-item {
+        list-style: none;
+        position: relative;
+        border: 3px solid transparent;
+      }
+      &-link {
+        text-decoration: none;
+        color: $clr-primary-fi;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &:hover {
+          color: $clr-primary-on;
+        }
+      }
+    }
+  }
+  .bottom__line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: $clr-primary-on;
+    transition: transform 0.3s ease-out;
+  }
+}
