@@ -1,0 +1,54 @@
+.related {
+  &__container {
+    padding: 0 93px 140px 107px;
+    @include mobile {
+      padding: 20px;
+    }
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      text-decoration: underline;
+      color: $clr-primary-on;
+      font-family: Fira Sans;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration-line: underline;
+      cursor: pointer;
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    color: $clr-primary-fo;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 63px;
+    @include mobile {
+      white-space: nowrap;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 47px 30px;
+    @include mobile {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .product__favorite {
+      right: 27px;
+      top: 20px;
+    }
+  }
+}

@@ -1,10 +1,27 @@
 @import "./variables";
 @import "./mixin";
 @import "./global";
+// component
 @import "./header";
+@import "./footer";
 @import "./banner";
+
+//  Page home
 @import "./categories";
 @import "./saleoff";
 @import "./products";
 @import "./product";
-@import "./footer";
+
+// Page category
+@import "./category";
+
+// Page detail
+@import "./detail";
+@import "./related";
+
+// Page cart
+@import "./cart";
+
+// Page checkout
+@import "./checkout";
+@import "./paymethod";

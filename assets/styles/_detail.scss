@@ -1,0 +1,291 @@
+.detail {
+  &__container {
+    padding: 53px 74px 58px 107px;
+    @include mobile {
+      padding: 20px;
+    }
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 29px;
+    .nav {
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 23px;
+
+        @include mobile {
+          gap: 5px;
+          justify-content: start;
+          flex-wrap: wrap;
+        }
+        li {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          gap: 23px;
+          @include mobile {
+            gap: 5px;
+          }
+          &:last-child {
+            a {
+              color: $clr-primary-on;
+            }
+          }
+
+          a {
+            text-decoration: none;
+            color: $clr-secondary-tw;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          span {
+            font-size: 36px;
+          }
+          @include mobile {
+            a,
+            span {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__main {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    gap: 27px;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+  &__images {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    flex: 0.5;
+
+    @include mobile {
+      flex-direction: column-reverse;
+    }
+    .sub-image {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      height: 100%;
+      @include mobile {
+        padding-bottom: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-bottom: 1px solid rgba($color: $clr-primary-fo, $alpha: 0.5);
+      }
+      img {
+        width: 112px;
+        height: 112px;
+        object-fit: cover;
+        transition: all 0.1s linear;
+        cursor: pointer;
+        @include mobile {
+          width: 70px;
+          height: 70px;
+        }
+        &:hover {
+          border: 5px solid $clr-primary-on;
+        }
+      }
+    }
+    .image-main {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-size: contain;
+      }
+    }
+  }
+  &__content {
+    flex: 0.5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 15px;
+    @include mobile {
+      flex: 1;
+    }
+  }
+  &__category {
+    color: $clr-primary-si;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    @include mobile {
+    }
+  }
+
+  &__name {
+    color: $clr-primary-fo;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    @include mobile {
+      font-size: 36px;
+    }
+  }
+  &__price {
+    color: $clr-primary-on;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  &__reviews {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    .rating {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      span {
+        color: $clr-primary-on;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      p {
+        color: $clr-primary-fo;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+  &__potter-color {
+    margin-bottom: 6px;
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      li {
+        list-style: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        &:nth-child(1) {
+          background: $clr-potter-dark;
+        }
+        &:nth-child(2) {
+          background: $clr-potter-pink-light;
+        }
+        &:nth-child(3) {
+          background: $clr-potter-brown;
+        }
+      }
+    }
+  }
+  &__desc {
+    h4 {
+      color: $clr-primary-fo;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 7px;
+    }
+    p {
+      color: $clr-primary-fo;
+      text-align: justify;
+
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-left: 10px;
+    }
+  }
+  &__overview {
+    margin-bottom: 50px;
+    h3 {
+      color: $clr-primary-fo;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 6px;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 52px;
+      li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        .group {
+          span {
+            color: $clr-primary-on;
+            text-align: justify;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          p {
+            color: $clr-primary-si;
+            text-align: justify;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+  &__button {
+    color: $clr-secondary-on;
+    background-color: $clr-primary-on;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 15px;
+    max-width: 420px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s linear;
+    white-space: nowrap;
+    &:hover {
+      color: $clr-primary-on;
+      background-color: $clr-secondary-on;
+      border: 2px solid;
+    }
+    @include mobile {
+      padding: 15px;
+    }
+  }
+}
+
+.active-image {
+  border: 5px solid $clr-primary-on !important;
+}

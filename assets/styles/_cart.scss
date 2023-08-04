@@ -1,0 +1,320 @@
+.cart {
+  &__container {
+    padding: 0 64px 75px 108px;
+    @include mobile {
+      padding: 20px;
+      overflow: hidden;
+    }
+  }
+  &__title {
+    color: $clr-primary-fo;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 91px;
+    @include mobile {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 100px;
+    @include mobile {
+      margin-bottom: 50px;
+    }
+  }
+
+  th {
+    color: $clr-primary-si;
+    font-family: Fira Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+    padding-bottom: 22px;
+    border-bottom: 1px solid $clr-primary-fo;
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+
+  td {
+    padding: 20px;
+    text-align: left;
+
+    &:first-child {
+      @include mobile {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-right: 20px;
+      }
+    }
+    &:last-child() {
+      @include mobile {
+        margin-left: auto;
+      }
+    }
+    @include mobile {
+      padding: 20px 0 0;
+    }
+    input[type="checkbox"] {
+      position: relative;
+      border: 2px solid $clr-primary-fo;
+      border-radius: 2px;
+      background: none;
+      cursor: pointer;
+      line-height: 0;
+      margin: 0 0.6em 0 0;
+      outline: 0;
+      padding: 0 !important;
+      vertical-align: text-top;
+      height: 25px;
+      width: 25px;
+      -webkit-appearance: none;
+      opacity: 0.5;
+      @include mobile {
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    input[type="checkbox"]:hover {
+      opacity: 1;
+    }
+
+    input[type="checkbox"]:checked {
+      background-color: $clr-primary-on;
+      opacity: 1;
+    }
+
+    input[type="checkbox"]:before {
+      content: "";
+      position: absolute;
+      right: 50%;
+      top: 50%;
+      width: 4px;
+      height: 10px;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      margin: -1px -1px 0 -1px;
+      transform: rotate(45deg) translate(-50%, -50%);
+      z-index: 2;
+    }
+    label {
+      color: $clr-primary-fo;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    img {
+      width: 150px;
+      height: 150px;
+      margin-left: 36px;
+      margin-right: 40px;
+      vertical-align: middle;
+      @include mobile {
+        width: 50px;
+        height: 50px;
+        margin: 0;
+      }
+    }
+    span {
+      color: $clr-primary-fo;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.165px;
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+  }
+  td .quantity {
+    display: flex;
+    align-items: center;
+  }
+
+  td .quantity button {
+    width: 30px;
+    height: 30px;
+    font-size: 26px;
+    line-height: 26px;
+    border-radius: 50%;
+    border: none;
+    color: $clr-secondary-on;
+    background-color: $clr-primary-on;
+    cursor: pointer;
+  }
+
+  td .quantity input {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: none;
+    color: #475871;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @include mobile {
+      width: 30px;
+    }
+  }
+  td .price {
+    color: $clr-primary-fo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    @include mobile {
+      font-size: 20px;
+      margin-left: 10px;
+    }
+  }
+  &__bill {
+    border-top: 1px solid $clr-primary-fo;
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    .bill-content {
+      overflow: hidden;
+      display: inline-block;
+      text-align: center;
+      @include mobile {
+        width: 100%;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      font-family: $fonts-secondary;
+
+      li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 145px;
+        @include mobile {
+          gap: 0;
+        }
+        h4,
+        span {
+          color: rgba(71, 88, 113, 0.5);
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: -0.165px;
+          @include mobile {
+            font-size: 20px;
+          }
+        }
+        &:last-child {
+          h4,
+          span {
+            color: $clr-primary-fo;
+          }
+        }
+      }
+    }
+  }
+  &__button {
+    display: inline-block;
+    text-decoration: none;
+    color: $clr-secondary-on;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    outline: none;
+    background: linear-gradient(0deg, $clr-primary-tw 0%, $clr-primary-on 100%);
+    width: 380px;
+    height: 80px;
+    line-height: 80px;
+    padding: 0;
+    border: none;
+    font-size: 28px;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: -0.165px;
+    margin-top: 43px;
+    @include mobile {
+      width: 100%;
+      height: 70px;
+      line-height: 70px;
+      font-size: 24px;
+    }
+  }
+  &__button span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  &__button:before,
+  &__button:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: $clr-primary-on;
+    transition: all 0.3s ease;
+  }
+  &__button:before {
+    height: 0%;
+    width: 2px;
+  }
+  &__button:after {
+    width: 0%;
+    height: 2px;
+  }
+  &__button:hover {
+    background: transparent;
+    box-shadow: none;
+  }
+  &__button:hover:before {
+    height: 100%;
+  }
+  &__button:hover:after {
+    width: 100%;
+  }
+  &__button span:hover {
+    color: $clr-primary-on;
+  }
+  &__button span:before,
+  &__button span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: $clr-primary-on;
+    transition: all 0.3s ease;
+  }
+  &__button span:before {
+    width: 2px;
+    height: 0%;
+  }
+  &__button span:after {
+    width: 0%;
+    height: 2px;
+  }
+  &__button span:hover:before {
+    height: 100%;
+  }
+  &__button span:hover:after {
+    width: 100%;
+  }
+}

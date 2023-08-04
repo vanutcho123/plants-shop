@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Categories - plants shop</title>
+
+    <!-- Link file css -->
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <!-- Link icon -->
+    <script
+      src="https://kit.fontawesome.com/b81af1a42d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <!-- Button scroll top -->
+      <button id="scrollToTopBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+      <!-- Section header -->
+      <header class="header">
+        <div class="header__container">
+          <div class="header__top">
+            <a href="./home.html" class="header__logo">
+              <img src="./assets/images/logo.png" alt="" />
+              <span>Plants Shop</span>
+            </a>
+            <form>
+              <div class="icon">
+                <img
+                  src="./assets/images//icons/magnifying-glass 1.png"
+                  alt=""
+                />
+              </div>
+              <input type="text" placeholder="Search" />
+            </form>
+            <div class="header__right">
+              <div class="header__favorite">
+                <img src="./assets/images/icons/favorite.png" alt="" />
+              </div>
+              <a href="./cart.html" class="header__cart">
+                <img src="./assets/images/icons/cart.png" alt="" />
+              </a>
+              <div class="header__auth">
+                <img
+                  class="avatar"
+                  src="./assets/images/icons/avatar.png"
+                  alt=""
+                />
+                <span class="username">Hai</span>
+              </div>
+              <div class="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+          </div>
+          <div class="header__bot">
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="./home.html" class="menu-link"> Home </a>
+              </li>
+              <li class="menu-item active">
+                <a href="./categories.html" class="menu-link"> Categories </a>
+              </li>
+              <li class="menu-item">
+                <a href="./cart.html" class="menu-link"> Cart </a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link"> Favorite </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- Section banner -->
+      <section class="banner">
+        <img src="./assets/images/banner.png" alt="" />
+      </section>
+
+      <!-- Main categories -->
+
+      <main>
+        <div class="category">
+          <div class="category__container">
+            <div class="category__head">
+              <div class="nav">
+                <ul>
+                  <li>
+                    <a href="./home.html">Home</a>
+                    <span>></span>
+                  </li>
+                  <li>
+                    <a href="./categories.html">Product</a>
+                    <span>></span>
+                  </li>
+                  <li>
+                    <a href="#">Indoor</a>
+                    <span></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="category__priceRange">
+                <span>Price Range: </span>
+                <input type="number" name="" id="" placeholder="Min - Max" />
+              </div>
+              <div class="category__view">
+                <span>View</span>
+                <div class="view-icon">
+                  <img src="./assets/images/icons/category 1.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="category__main">
+              <div class="category__sidebar">
+                <div class="potter-color">
+                  <h3 class="title">Potter Color :</h3>
+                  <div class="color">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="180"
+                      height="20"
+                      viewBox="0 0 180 20"
+                      fill="none"
+                    >
+                      <circle
+                        cx="10"
+                        cy="10"
+                        r="10"
+                        fill="#475871"
+                        fill-opacity="0.38"
+                      />
+                      <circle cx="50" cy="10" r="10" fill="#FFCDBE" />
+                      <circle cx="90" cy="10" r="10" fill="#4D4D4D" />
+                      <circle cx="130" cy="10" r="10" fill="#FF9451" />
+                      <circle
+                        cx="170"
+                        cy="10"
+                        r="9.5"
+                        fill="white"
+                        stroke="black"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="line"></div>
+
+                <div class="sizes">
+                  <h3 class="title">Size:</h3>
+                  <div class="choose-size">
+                    <div class="size">
+                      <input
+                        type="checkbox"
+                        id="large"
+                        name="size"
+                        value="large"
+                        class="input-checkbox"
+                      />
+                      <label for="large">Large</label>
+                    </div>
+                    <div class="size">
+                      <input
+                        type="checkbox"
+                        id="medium"
+                        name="size"
+                        value="medium"
+                      />
+                      <label for="medium">Medium</label>
+                    </div>
+                    <div class="size">
+                      <input
+                        type="checkbox"
+                        id="small"
+                        name="size"
+                        value="small"
+                      />
+                      <label for="small">Small</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="prige-range">
+                  <h3 class="title">Price Range :</h3>
+                  <div class="flex-range">
+                    <input type="number" placeholder="Min" name="" id="" />
+                    <span>-</span>
+                    <input type="number" placeholder="Max" name="" id="" />
+                    <button>></button>
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="reviews">
+                  <h3 class="title">Reviews :</h3>
+                  <div>
+                    <ul>
+                      <li>
+                        <div class="">
+                          <img src="./assets/images/icons/star 1.png" alt="" />
+                          <img src="./assets/images/icons/star 1.png" alt="" />
+                          <img src="./assets/images/icons/star 1.png" alt="" />
+                          <img src="./assets/images/icons/star 1.png" alt="" />
+                          <img src="./assets/images/icons/star 1.png" alt="" />
+                        </div>
+                      </li>
+                      <li>
+                        <div class="">
+                          <img src="./assets/images/icons/star 1.png" alt="" />
+                          <img src="./assets/images/icons/star 1.png" alt="" />
+                          <img src="./assets/images/icons/star 1.png" alt="" />
+                          <img src="./assets/images/icons/star 1.png" alt="" />
+                          <img src="./assets/images/icons/no-star.png" alt="" />
+                        </div>
+                      </li>
+                      <li>
+                        <div class="">
+                          <img src="./assets/images/icons/star 1.png" alt="" />
+                          <img src="./assets/images/icons/star 1.png" alt="" />
+                          <img src="./assets/images/icons/star 1.png" alt="" />
+                          <img src="./assets/images/icons/no-star.png" alt="" />
+                          <img src="./assets/images/icons/no-star.png" alt="" />
+                        </div>
+                      </li>
+                      <li>
+                        <div class="">
+                          <img src="./assets/images/icons/star 1.png" alt="" />
+                          <img src="./assets/images/icons/star 1.png" alt="" />
+                          <img src="./assets/images/icons/no-star.png" alt="" />
+                          <img src="./assets/images/icons/no-star.png" alt="" />
+                          <img src="./assets/images/icons/no-star.png" alt="" />
+                        </div>
+                      </li>
+                      <li>
+                        <div class="">
+                          <img src="./assets/images/icons/star 1.png" alt="" />
+                          <img src="./assets/images/icons/no-star.png" alt="" />
+                          <img src="./assets/images/icons/no-star.png" alt="" />
+                          <img src="./assets/images/icons/no-star.png" alt="" />
+                          <img src="./assets/images/icons/no-star.png" alt="" />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="sidebar-img">
+                  <img src="./assets/images/icons/sidebar.png" alt="" />
+                </div>
+              </div>
+              <div class="category__content">
+                <div class="category__products">
+                  <a href="./detail.html" class="product">
+                    <img src="./assets/images/products/product.png" alt="" />
+                    <div class="product__content">
+                      <div>
+                        <h4 class="product__title">Indoor</h4>
+                        <h3 class="product__name">Monstera</h3>
+                        <span class="product__from"> from </span>
+                        <span class="product__price"> $75.00 </span>
+                      </div>
+                      <div class="product__btn">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                        >
+                          <circle cx="15" cy="15" r="15" fill="#40CA68" />
+                          <line
+                            x1="8"
+                            y1="15"
+                            x2="22"
+                            y2="15"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                          <line
+                            x1="15"
+                            y1="8"
+                            x2="15"
+                            y2="22"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <button class="product__favorite">
+                      <img src="./assets/images/icons/favorite.png" alt="" />
+                    </button>
+                  </a>
+                  <a href="./detail.html" class="product">
+                    <img src="./assets/images/products/product2.png" alt="" />
+                    <div class="product__content">
+                      <div>
+                        <h4 class="product__title">Indoor</h4>
+                        <h3 class="product__name">Monstera</h3>
+                        <span class="product__from"> from </span>
+                        <span class="product__price"> $75.00 </span>
+                      </div>
+                      <div class="product__btn">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                        >
+                          <circle cx="15" cy="15" r="15" fill="#40CA68" />
+                          <line
+                            x1="8"
+                            y1="15"
+                            x2="22"
+                            y2="15"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                          <line
+                            x1="15"
+                            y1="8"
+                            x2="15"
+                            y2="22"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <button class="product__favorite">
+                      <img src="./assets/images/icons/favorite.png" alt="" />
+                    </button>
+                  </a>
+                  <a href="./detail.html" class="product">
+                    <img src="./assets/images/products/product3.png" alt="" />
+                    <div class="product__content">
+                      <div>
+                        <h4 class="product__title">Indoor</h4>
+                        <h3 class="product__name">Monstera</h3>
+                        <span class="product__from"> from </span>
+                        <span class="product__price"> $75.00 </span>
+                      </div>
+                      <div class="product__btn">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                        >
+                          <circle cx="15" cy="15" r="15" fill="#40CA68" />
+                          <line
+                            x1="8"
+                            y1="15"
+                            x2="22"
+                            y2="15"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                          <line
+                            x1="15"
+                            y1="8"
+                            x2="15"
+                            y2="22"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <button class="product__favorite">
+                      <img src="./assets/images/icons/favorite.png" alt="" />
+                    </button>
+                  </a>
+                  <a href="./detail.html" class="product">
+                    <img src="./assets/images/products/product4.png" alt="" />
+                    <div class="product__content">
+                      <div>
+                        <h4 class="product__title">Indoor</h4>
+                        <h3 class="product__name">Monstera</h3>
+                        <span class="product__from"> from </span>
+                        <span class="product__price"> $75.00 </span>
+                      </div>
+                      <div class="product__btn">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                        >
+                          <circle cx="15" cy="15" r="15" fill="#40CA68" />
+                          <line
+                            x1="8"
+                            y1="15"
+                            x2="22"
+                            y2="15"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                          <line
+                            x1="15"
+                            y1="8"
+                            x2="15"
+                            y2="22"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <button class="product__favorite">
+                      <img src="./assets/images/icons/favorite.png" alt="" />
+                    </button>
+                  </a>
+                  <a href="./detail.html" class="product">
+                    <img src="./assets/images/products/product5.png" alt="" />
+                    <div class="product__content">
+                      <div>
+                        <h4 class="product__title">Indoor</h4>
+                        <h3 class="product__name">Monstera</h3>
+                        <span class="product__from"> from </span>
+                        <span class="product__price"> $75.00 </span>
+                      </div>
+                      <div class="product__btn">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                        >
+                          <circle cx="15" cy="15" r="15" fill="#40CA68" />
+                          <line
+                            x1="8"
+                            y1="15"
+                            x2="22"
+                            y2="15"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                          <line
+                            x1="15"
+                            y1="8"
+                            x2="15"
+                            y2="22"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <button class="product__favorite">
+                      <img src="./assets/images/icons/favorite.png" alt="" />
+                    </button>
+                  </a>
+                  <a href="./detail.html" class="product">
+                    <img src="./assets/images/products/product6.png" alt="" />
+                    <div class="product__content">
+                      <div>
+                        <h4 class="product__title">Indoor</h4>
+                        <h3 class="product__name">Monstera</h3>
+                        <span class="product__from"> from </span>
+                        <span class="product__price"> $75.00 </span>
+                      </div>
+                      <div class="product__btn">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                        >
+                          <circle cx="15" cy="15" r="15" fill="#40CA68" />
+                          <line
+                            x1="8"
+                            y1="15"
+                            x2="22"
+                            y2="15"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                          <line
+                            x1="15"
+                            y1="8"
+                            x2="15"
+                            y2="22"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <button class="product__favorite">
+                      <img src="./assets/images/icons/favorite.png" alt="" />
+                    </button>
+                  </a>
+                  <a href="./detail.html" class="product">
+                    <img src="./assets/images/products/product7.png" alt="" />
+                    <div class="product__content">
+                      <div>
+                        <h4 class="product__title">Indoor</h4>
+                        <h3 class="product__name">Monstera</h3>
+                        <span class="product__from"> from </span>
+                        <span class="product__price"> $75.00 </span>
+                      </div>
+                      <div class="product__btn">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                        >
+                          <circle cx="15" cy="15" r="15" fill="#40CA68" />
+                          <line
+                            x1="8"
+                            y1="15"
+                            x2="22"
+                            y2="15"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                          <line
+                            x1="15"
+                            y1="8"
+                            x2="15"
+                            y2="22"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <button class="product__favorite">
+                      <img src="./assets/images/icons/favorite.png" alt="" />
+                    </button>
+                  </a>
+                  <a href="./detail.html" class="product">
+                    <img src="./assets/images/products/product7.png" alt="" />
+                    <div class="product__content">
+                      <div>
+                        <h4 class="product__title">Indoor</h4>
+                        <h3 class="product__name">Monstera</h3>
+                        <span class="product__from"> from </span>
+                        <span class="product__price"> $75.00 </span>
+                      </div>
+                      <div class="product__btn">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                        >
+                          <circle cx="15" cy="15" r="15" fill="#40CA68" />
+                          <line
+                            x1="8"
+                            y1="15"
+                            x2="22"
+                            y2="15"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                          <line
+                            x1="15"
+                            y1="8"
+                            x2="15"
+                            y2="22"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <button class="product__favorite">
+                      <img src="./assets/images/icons/favorite.png" alt="" />
+                    </button>
+                  </a>
+                  <a href="./detail.html" class="product">
+                    <img src="./assets/images/products/product9.png" alt="" />
+                    <div class="product__content">
+                      <div>
+                        <h4 class="product__title">Indoor</h4>
+                        <h3 class="product__name">Monstera</h3>
+                        <span class="product__from"> from </span>
+                        <span class="product__price"> $75.00 </span>
+                      </div>
+                      <div class="product__btn">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="none"
+                        >
+                          <circle cx="15" cy="15" r="15" fill="#40CA68" />
+                          <line
+                            x1="8"
+                            y1="15"
+                            x2="22"
+                            y2="15"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                          <line
+                            x1="15"
+                            y1="8"
+                            x2="15"
+                            y2="22"
+                            stroke="white"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <button class="product__favorite">
+                      <img src="./assets/images/icons/favorite.png" alt="" />
+                    </button>
+                  </a>
+                </div>
+                <div class="paging">
+                  <ul>
+                    <li class="active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Section Footer -->
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__logo">Plants Shop</div>
+          <div class="footer__row">
+            <div class="footer__col">
+              <div class="footer__title"></div>
+              <ul class="footer__info">
+                <li>Address: Nam Ky Khoi Nghia - Da Nang</li>
+                <li>Hotline: 0905123456</li>
+                <li>Email: plantshop@gmail.com</li>
+                <li>Website: www.plantshop.net.vn</li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <div class="footer__title">Follow us</div>
+              <ul class="footer__social">
+                <li>
+                  <a href="#">
+                    <img src="./assets/images/instagram.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/images/twitter.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/images/facebook.png" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <div class="footer__title">About</div>
+              <div class="footer__desc">
+                We’re your online houseplant destination. We offer a wide range
+                of houseplants and accessories shipped directly from our (green)
+                house to yours!
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--  -->
+
+    <!-- Link file js -->
+    <script src="./assets/javascripts/main.js"></script>
+  </body>
+</html>

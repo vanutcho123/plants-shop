@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Checkout - plants shop</title>
+
+    <!-- Link file css -->
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <!-- Link icon -->
+    <script
+      src="https://kit.fontawesome.com/b81af1a42d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <!-- Button scroll top -->
+      <button id="scrollToTopBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+      <!-- Section header -->
+      <header class="header">
+        <div class="header__container">
+          <div class="header__top">
+            <a href="./home.html" class="header__logo">
+              <img src="./assets/images/logo.png" alt="" />
+              <span>Plants Shop</span>
+            </a>
+            <form>
+              <div class="icon">
+                <img
+                  src="./assets/images//icons/magnifying-glass 1.png"
+                  alt=""
+                />
+              </div>
+              <input type="text" placeholder="Search" />
+            </form>
+            <div class="header__right">
+              <div class="header__favorite">
+                <img src="./assets/images/icons/favorite.png" alt="" />
+              </div>
+              <a href="./cart.html" class="header__cart">
+                <img src="./assets/images/icons/cart.png" alt="" />
+              </a>
+              <div class="header__auth">
+                <img
+                  class="avatar"
+                  src="./assets/images/icons/avatar.png"
+                  alt=""
+                />
+                <span class="username">Hai</span>
+              </div>
+              <div class="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+          </div>
+          <div class="header__bot">
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="./home.html" class="menu-link"> Home </a>
+              </li>
+              <li class="menu-item">
+                <a href="./categories.html" class="menu-link"> Categories </a>
+              </li>
+              <li class="menu-item active">
+                <a href="./cart.html" class="menu-link"> Cart </a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link"> Favorite </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- Main cart -->
+      <main>
+        <!-- Checkout -->
+        <div class="checkout">
+          <div class="checkout__container">
+            <h3 class="checkout__title">Checkout</h3>
+            <div class="checkout__content">
+              <div class="checkout__card card-active">
+                <div class="tick" id="tick"></div>
+                <div class="checkout__card-content">
+                  <h5>Home</h5>
+                  <span>(849) 123 - 456</span>
+                  <span>Ngu Hanh Son, Da Nang</span>
+                </div>
+                <div class="edit">
+                  <img src="./assets/images/icons/pen 1.png" alt="" />
+                </div>
+              </div>
+              <div class="checkout__card">
+                <div class="tick" id="tick"></div>
+                <div class="checkout__card-content">
+                  <h5>Office</h5>
+                  <span>(849) 123 - 456</span>
+                  <span>Ngu Hanh Son, Da Nang</span>
+                </div>
+                <div class="edit">
+                  <img src="./assets/images/icons/pen 1.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment -->
+        <div class="pay">
+          <div class="pay__container cart__container">
+            <h3 class="pay__title">Payment Method</h3>
+            <div class="pay__content">
+              <div class="pay__card pay-active">
+                <img src="./assets/images/icons/paypal.png" alt="" />
+                <span>Paypal</span>
+                <div class="tick" id="tick1"></div>
+              </div>
+              <div class="pay__card">
+                <img src="./assets/images/icons/credit.png" alt="" />
+                <span>Credit card</span>
+                <div class="tick" id="tick2"></div>
+              </div>
+              <div class="pay__card">
+                <img src="./assets/images/icons/cash.png" alt="" />
+                <span>Payment on cash</span>
+                <div class="tick" id="tick3"></div>
+              </div>
+            </div>
+            <table>
+              <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" name="" id="" />
+                  <img
+                    src="./assets/images/cart_png.png"
+                    alt="Calathea Vittata"
+                  />
+                  <span>Calathea Vittata</span>
+                </td>
+                <td>
+                  <div class="quantity">
+                    <button class="decrement">-</button>
+                    <input type="number" value="1" min="1" />
+                    <button class="increment">+</button>
+                  </div>
+                </td>
+                <td style="width: 200px">
+                  <span class="price">$75.00</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" name="" id="" />
+                  <img
+                    src="./assets/images/cart_png2.png"
+                    alt="Calathea Vittata"
+                  />
+                  <span>Calathea Vittata</span>
+                </td>
+                <td>
+                  <div class="quantity">
+                    <button class="decrement">-</button>
+                    <input type="number" value="1" min="1" />
+                    <button class="increment">+</button>
+                  </div>
+                </td>
+                <td style="width: 200px">
+                  <span class="price">$75.00</span>
+                </td>
+              </tr>
+            </table>
+            <div class="cart__bill">
+              <div class="bill-content">
+                <ul>
+                  <li>
+                    <h4>Subtotal</h4>
+                    <span id="subtotalValue">$125.00</span>
+                  </li>
+                  <li>
+                    <h4>Shipping cost</h4>
+                    <span>$5.00</span>
+                  </li>
+                  <li>
+                    <h4>Total</h4>
+                    <span id="totalValue">$130.00</span>
+                  </li>
+                </ul>
+                <a href="./checkout.html" class="cart__button">
+                  <span>Payment</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Section Footer -->
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__logo">Plants Shop</div>
+          <div class="footer__row">
+            <div class="footer__col">
+              <div class="footer__title"></div>
+              <ul class="footer__info">
+                <li>Address: Nam Ky Khoi Nghia - Da Nang</li>
+                <li>Hotline: 0905123456</li>
+                <li>Email: plantshop@gmail.com</li>
+                <li>Website: www.plantshop.net.vn</li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <div class="footer__title">Follow us</div>
+              <ul class="footer__social">
+                <li>
+                  <a href="#">
+                    <img src="./assets/images/instagram.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/images/twitter.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./assets/images/facebook.png" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <div class="footer__title">About</div>
+              <div class="footer__desc">
+                We’re your online houseplant destination. We offer a wide range
+                of houseplants and accessories shipped directly from our (green)
+                house to yours!
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!--  -->
+
+    <!-- Link file js -->
+    <script src="./assets/javascripts/main.js"></script>
+    <script src="./assets/javascripts/cart.js"></script>
+  </body>
+</html>

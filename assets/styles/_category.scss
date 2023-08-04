@@ -1,0 +1,284 @@
+.category {
+  &__container {
+    padding: 60px 56px 218px 88px;
+    @include mobile {
+      padding: 20px;
+    }
+  }
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    .nav {
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 23px;
+        @include mobile {
+          gap: 5px;
+        }
+        li {
+          list-style: none;
+          display: flex;
+          align-items: center;
+          gap: 23px;
+          @include mobile {
+            gap: 5px;
+          }
+          &:last-child {
+            a {
+              color: $clr-primary-on;
+            }
+          }
+
+          a {
+            text-decoration: none;
+            color: $clr-secondary-tw;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          span {
+            font-size: 36px;
+          }
+          @include mobile {
+            a,
+            span {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__priceRange {
+    @include mobile {
+      display: none;
+    }
+    span {
+      color: $clr-secondary-tw;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-right: 30px;
+    }
+    input {
+      background: $clr-primary-tw;
+      color: $clr-gray;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+      padding: 10px;
+      border: none;
+      outline: none;
+    }
+  }
+  &__view {
+    @include mobile {
+      display: none;
+    }
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    span {
+      color: $clr-secondary-tw;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  &__main {
+    display: flex;
+    align-items: stretch;
+    gap: 110px;
+  }
+  &__sidebar {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    @include xl {
+      width: 300px;
+    }
+    @include mobile {
+      display: none;
+    }
+    .sizes {
+      .choose-size {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .size {
+          display: flex;
+          align-items: center;
+          gap: 13px;
+          label,
+          input[type="checkbox"] {
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+          }
+
+          input[type="checkbox"]:checked + label {
+            color: $clr-primary-on;
+          }
+          // Input
+
+          input[type="checkbox"] {
+            position: relative;
+            border: 2px solid $clr-primary-fo;
+            border-radius: 2px;
+            background: none;
+            cursor: pointer;
+            line-height: 0;
+            margin: 0 0.6em 0 0;
+            outline: 0;
+            padding: 0 !important;
+            vertical-align: text-top;
+            height: 20px;
+            width: 20px;
+            -webkit-appearance: none;
+            opacity: 0.5;
+          }
+
+          input[type="checkbox"]:hover {
+            opacity: 1;
+          }
+
+          input[type="checkbox"]:checked {
+            background-color: $clr-primary-on;
+            opacity: 1;
+          }
+
+          input[type="checkbox"]:before {
+            content: "";
+            position: absolute;
+            right: 50%;
+            top: 50%;
+            width: 4px;
+            height: 10px;
+            border: solid #fff;
+            border-width: 0 2px 2px 0;
+            margin: -1px -1px 0 -1px;
+            transform: rotate(45deg) translate(-50%, -50%);
+            z-index: 2;
+          }
+          label {
+            color: $clr-primary-fo;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+          //
+        }
+      }
+    }
+    .prige-range {
+      .flex-range {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        input {
+          width: 88px;
+          height: 32px;
+          border: 1px solid $clr-primary-fo;
+          background: $clr-secondary-on;
+          color: $clr-primary-si;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          padding: 5px;
+          outline: none;
+        }
+        span {
+          font-size: 40px;
+        }
+        button {
+          font-size: 30px;
+          font-weight: 700;
+          outline: none;
+          border: none;
+          background: transparent;
+        }
+      }
+    }
+    .reviews {
+      margin-bottom: 28px;
+      ul {
+        li {
+          list-style: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .title {
+    color: $clr-primary-fo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 17px;
+  }
+  &__content {
+    flex: 1;
+  }
+  &__products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 44px 17px;
+    margin-bottom: 50px;
+    @include mobile {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .product__favorite {
+      top: 25px;
+      right: 25px;
+    }
+  }
+  .paging {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      li {
+        list-style: none;
+        color: $clr-primary-fo;
+        background: $clr-primary-th;
+        border: 1px solid $clr-primary-fo;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 5px 16px;
+        cursor: pointer;
+
+        &.active {
+          background: $clr-primary-on !important;
+          color: $clr-primary-th !important;
+        }
+      }
+    }
+  }
+  .potter-color {
+    cursor: pointer;
+  }
+  .sidebar-img {
+    margin-top: auto;
+    @include mobile {
+      display: none;
+    }
+  }
+}
